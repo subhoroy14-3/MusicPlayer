@@ -25,10 +25,10 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", None)
-        self.API_HASH: str = os.environ.get("API_HASH", None)
+        self.API_ID: str = os.environ.get("24169895", None)
+        self.API_HASH: str = os.environ.get("8048db204b2eb17aedd0582cc50058d1", None)
         self.SESSION: str = os.environ.get("SESSION", None)
-        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", None)
+        self.BOT_TOKEN: str = os.environ.get("7363542366:AAFPBryxIOJlnhNqrp8t-sfso9eUmNKTPNw", None)
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
         ]
@@ -37,7 +37,7 @@ class Config:
             quit(0)
         self.SPOTIFY: bool = False
         self.QUALITY: str = os.environ.get("QUALITY", "high").lower()
-        self.PREFIXES: list = os.environ.get("PREFIX", "!").split()
+        self.PREFIXES: list = os.environ.get("/", "!").split()
         self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
         self.STREAM_MODE: str = (
             "audio"
